@@ -2,10 +2,12 @@ require "capybara/rspec"
 require "./app.rb"
 Capybara.app = Battle
 
-feature "display content" do
-  scenario 'display something' do
+feature "enter play names" do
+  scenario 'display names entered' do
     visit('/')
-    expect(page).to have_content "Hello Battle!"
+    fill_in :player_1, with: "Socks"
+    fill_in :player_2, with: "Boots"
+    click_button 'Enter'
+    expect(page).to have_content "Socks vs Boots"
   end
-
 end
