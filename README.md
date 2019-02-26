@@ -1,7 +1,12 @@
 # battle_game
 
 ## Purpose
-Set up a web project using testing frameworks. HTTP, Sinatra and Capybara
+Set up a web project using testing frameworks.  
+
+#Tech Stack
+1. HTTP  
+2. Sinatra
+3. Capybara
 
 ## User stories
 ```
